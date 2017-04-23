@@ -1,0 +1,125 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+/** Roboto Font **/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/** This makes the page stretch the full width **/
+html, body {
+ margin: 0;
+}
+
+/** This changes the background color and font styles for entire page **/
+body {
+   background: #f5f5f5;
+   font-family: 'Roboto', sans-serif;
+}
+
+/** This puts the banner at the top of the page **/
+#banner {
+    display: block;
+    background-image: url("../media/Banner.jpg");
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-color: #00693C;
+    border-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 89px;
+}
+
+/** These styles control the navigatioon **/
+
+nav {
+   margin-bottom: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDB913;
+}
+
+nav li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+/* This pushes the first nav link to the righ a little */
+nav li:first-child {
+   margin-left: 3em;   
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    display: block;
+    color: #024925;
+    font-weight: bold;
+    font-size: 1.25em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #F8DE6E;
+}
+
+.active {
+    background-color: #F8DE6E;
+}
+
+#login {
+   float: right;
+}
+
+/** This controls the width of the outer fieldset**/
+#outer {
+   margin-left: 4em;
+   width: 60%;
+}
+
+/** This changes the styles for the border **/
+fieldSet {
+   border: 2px solid #FDB913;
+   margin-bottom: 2em;
+}
+
+/** This changes the stlyes for the main legend **/
+legend > h1 {
+   background-color: #024925;  
+   color: #FDB913;
+   padding: .2em .4em;
+}
+
+/** This changes the stlyes for the sub legends **/
+legend > h2 {
+   background-color: #024925;  
+   color: #FDB913;
+   padding: .2em .4em;
+   margin-top: .2em;
+}
+
+/* Footer styles */
+.footer {
+   background-color: #024925;
+   height: 82px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.footer > p {
+   display: inline-block;
+   vertical-align: middle;
+   text-align: center;
+   color: white;
+   margin-top: 41px;
+   padding-left: 30%;
+}
