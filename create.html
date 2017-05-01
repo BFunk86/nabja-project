@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>NABJA Project</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+</head>
+
+<body>
+<header>
+    <!-- This is where the JCC banner will go -->
+    <div id="banner"></div>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="report.html">Report</a></li>
+            <li><a href="create.html">Create</a></li>
+            <li><a href="relations.html">Relations</a></li>
+            <li id="login"><a href="#login">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<form id="outer">
+    <fieldset class="fieldSet">
+        <legend id="topLegend">
+            <h1>Create/Edit Student Learning Outcomes</h1>
+        </legend>
+
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#genEd">General Education</a></li>
+            </ul>
+            <!-- Course Ed Form -->
+            <div id="course">
+                <p>This is where the create course slo stuff goes</p>
+                <form>
+                    <input type="text" name=""/>
+                    <input type="submit" value="Create Student Learning Outcome"/>
+                </form>
+            </div><!-- end of creating new course slo -->
+            
+            <!-- Program Gen Ed Form -->
+            <div id="program">
+                <p>This is where the create prorgam slo stuff goes</p>
+                <form>
+                    <input type="text" name=""/>
+                    <input type="submit" value="Create Student Learning Outcome"/>
+                </form>
+            </div><!-- end of creating new program slo -->
+            
+            <!-- Create Gen Ed Form -->
+            <div id="genEd">
+                <p>This is where the create gen ed slo stuff goes</p>
+                <form>
+                    <input type="text" name=""/>
+                    <input type="submit" value="Create Student Learning Outcome"/>
+                </form>
+            </div><!-- end of creating new gen ed slo -->
+        </div>
+
+    </fieldset>
+    </form>
+</form>
+
+<footer>
+    <div class="footer">
+        <p>SUNY Jamestown Community College - 525 Falconer Street, Jamestown, NY</p>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="scripts/index.js"></script>
+
+</body>
+
+</html>
