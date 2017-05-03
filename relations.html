@@ -36,7 +36,7 @@
                <legend id="courseLegend">
                   <h2>Course</h2></legend>
                <label for="course">Course Name:</label><br>
-               <select id="course" size="6" multiple>
+               <select id="course">
               <option value="web_pub">Web Publishing</option>
               <option value="micro_Apps_I">Microcomputer Applications I</option>
               <option value="prog_concepts">Programming Concepts/Applications</option>
@@ -74,182 +74,177 @@
                   </thead>
                   
                   <tbody>
+                  
                   <tr>
                     <th>Web/Database Application</th>
-                    <td><input  type="radio"         name="webData"
-                                id="introduced"      value="i" /></td>   
-                    <td><input  type="radio"         name="webData"
-                                id="reinforced"      value="r" /></td>
-                    <td><input  type="radio"         name="webData"
-                                id="proficient"      value="p" /></td>
-                    <td><input  type="radio"         name="webData"
-                                id="assessed"        value="a" /></td>
-                    <td><input  type="radio"         name="webData"
-                                id="moreProficient"  value="m" /></td>
+                    <td><input  type="checkbox"    name="webData"       value="i" /></td>   
+                    <td><input  type="checkbox"    name="webData"       value="r" /></td>
+                    <td><input  type="checkbox"    name="webData"       value="p" /></td>
+                    <td><input  type="checkbox"    name="webData"       value="a" /></td>
+                    <td><input  type="checkbox"    name="webData"       value="m" /></td>
                   </tr>
                   
-                  <!--I didn't shrink these line until I know for sure this is the code we want-->
                   <tr>
                      <th>Office Software Solutions</th>
-                     <td><input type="radio"  name="officeSoft"    id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="officeSoft"    id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="officeSoft"    id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="officeSoft"    id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="officeSoft"    id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="officeSoft"    value="i" /></td>
+                     <td><input type="checkbox"    name="officeSoft"    value="r" /></td>
+                     <td><input type="checkbox"    name="officeSoft"    value="p" /></td>
+                     <td><input type="checkbox"    name="officeSoft"    value="a" /></td>
+                     <td><input type="checkbox"    name="officeSoft"    value="m" /></td>
                   </tr>
                                   
                   <tr>
                      <th>Object Oriented Programming Language</th>
-                     <td><input type="radio"  name="objProgLang"   id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="objProgLang"   id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="objProgLang"   id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="objProgLang"   id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="objProgLang"   id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="objProgLang"   value="i" /></td>
+                     <td><input type="checkbox"    name="objProgLang"   value="r" /></td>
+                     <td><input type="checkbox"    name="objProgLang"   value="p" /></td>
+                     <td><input type="checkbox"    name="objProgLang"   value="a" /></td>
+                     <td><input type="checkbox"    name="objProgLang"   value="m" /></td>
                   </tr>
                         
                   <tr>
                      <th>Hardware/Software Troubleshooting</th>
-                     <td><input type="radio"  name="hardSoftware"  id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="hardSoftware"  id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="hardSoftware"  id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="hardSoftware"  id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="hardSoftware"  id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="hardSoftware"  value="i" /></td>
+                     <td><input type="checkbox"    name="hardSoftware"  value="r" /></td>
+                     <td><input type="checkbox"    name="hardSoftware"  value="p" /></td>
+                     <td><input type="checkbox"    name="hardSoftware"  value="a" /></td>
+                     <td><input type="checkbox"    name="hardSoftware"  value="m" /></td>
                   </tr>
                                 
                   <tr>
                      <th>Networking</th>
-                     <td><input type="radio"  name="networking"    id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="networking"    id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="networking"    id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="networking"    id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="networking"    id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="networking"    value="i" /></td>
+                     <td><input type="checkbox"    name="networking"    value="r" /></td>
+                     <td><input type="checkbox"    name="networking"    value="p" /></td>
+                     <td><input type="checkbox"    name="networking"    value="a" /></td>
+                     <td><input type="checkbox"    name="networking"    value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Data Structures</th>
-                     <td><input type="radio"  name="dataStrctures" id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="dataStrctures" id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="dataStrctures" id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="dataStrctures" id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="dataStrctures" id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="dataStruct"    value="i" /></td>
+                     <td><input type="checkbox"    name="dataStruct"    value="r" /></td>
+                     <td><input type="checkbox"    name="dataStruct"    value="p" /></td>
+                     <td><input type="checkbox"    name="dataStruct"    value="a" /></td>
+                     <td><input type="checkbox"    name="dataStruct"    value="m" /></td>
                   </tr>
                   
                   <tr>
                      <th>Data Structures</th>
-                     <td><input type="radio"  name="assemblyLang"  id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="assemblyLang"  id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="assemblyLang"  id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="assemblyLang"  id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="assemblyLang"  id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="assemblyLang"  value="i" /></td>
+                     <td><input type="checkbox"    name="assemblyLang"  value="r" /></td>
+                     <td><input type="checkbox"    name="assemblyLang"  value="p" /></td>
+                     <td><input type="checkbox"    name="assemblyLang"  value="a" /></td>
+                     <td><input type="checkbox"    name="assemblyLang"  value="m" /></td>
                   </tr>
                
                   <tr>
                      <th>Basic Communication - 1</th>
-                     <td><input type="radio"  name="basicCom1"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="basicCom1"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="basicCom1"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="basicCom1"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="basicCom1"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="basicCom1"     value="i" /></td>
+                     <td><input type="checkbox"    name="basicCom1"     value="r" /></td>
+                     <td><input type="checkbox"    name="basicCom1"     value="p" /></td>
+                     <td><input type="checkbox"    name="basicCom1"     value="a" /></td>
+                     <td><input type="checkbox"    name="basicCom1"     value="m" /></td>
                   </tr>
               
                   <tr>
                      <th>Basic Communication - 2</th>
-                     <td><input type="radio"  name="basicCom2"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="basicCom2"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="basicCom2"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="basicCom2"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="basicCom2"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="basicCom2"     value="i" /></td>
+                     <td><input type="checkbox"    name="basicCom2"     value="r" /></td>
+                     <td><input type="checkbox"    name="basicCom2"     value="p" /></td>
+                     <td><input type="checkbox"    name="basicCom2"     value="a" /></td>
+                     <td><input type="checkbox"    name="basicCom2"     value="m" /></td>
                   </tr>
              
                 
                   <tr>
                      <th>Basic Communication - 3</th>
-                     <td><input type="radio"  name="basicCom3"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="basicCom3"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="basicCom3"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="basicCom3"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="basicCom3"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="basicCom3"     value="i" /></td>
+                     <td><input type="checkbox"    name="basicCom3"     value="r" /></td>
+                     <td><input type="checkbox"    name="basicCom3"     value="p" /></td>
+                     <td><input type="checkbox"    name="basicCom3"     value="a" /></td>
+                     <td><input type="checkbox"    name="basicCom3"     value="m" /></td>
                   </tr>
                 
                   <tr>
                      <th>Basic Communication - 4</th>
-                     <td><input type="radio"  name="basicCom4"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="basicCom4"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="basicCom4"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="basicCom4"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="basicCom4"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="basicCom4"     value="i" /></td>
+                     <td><input type="checkbox"    name="basicCom4"     value="r" /></td>
+                     <td><input type="checkbox"    name="basicCom4"     value="p" /></td>
+                     <td><input type="checkbox"    name="basicCom4"     value="a" /></td>
+                     <td><input type="checkbox"    name="basicCom4"     value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Basic Communication - 5</th>
-                     <td><input type="radio"  name="basicCom5"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="basicCom5"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="basicCom5"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="basicCom5"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="basicCom5"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="basicCom5"     value="i" /></td>
+                     <td><input type="checkbox"    name="basicCom5"     value="r" /></td>
+                     <td><input type="checkbox"    name="basicCom5"     value="p" /></td>
+                     <td><input type="checkbox"    name="basicCom5"     value="a" /></td>
+                     <td><input type="checkbox"    name="basicCom5"     value="m" /></td>
                   </tr>
                 
                   <tr>
                      <th>Math/Quantitative Reasoning - 1</th>
-                     <td><input type="radio"  name="mathQuant1"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="mathQuant1"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="mathQuant1"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="mathQuant1"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="mathQuant1"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="mathQuant1"    value="i" /></td>
+                     <td><input type="checkbox"    name="mathQuant1"    value="r" /></td>
+                     <td><input type="checkbox"    name="mathQuant1"    value="p" /></td>
+                     <td><input type="checkbox"    name="mathQuant1"    value="a" /></td>
+                     <td><input type="checkbox"    name="mathQuant1"    value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Math/Quantitative Reasoning - 2</th>
-                     <td><input type="radio"  name="mathQuant2"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="mathQuant2"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="mathQuant2"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="mathQuant2"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="mathQuant2"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="mathQuant2"    value="i" /></td>
+                     <td><input type="checkbox"    name="mathQuant2"    value="r" /></td>
+                     <td><input type="checkbox"    name="mathQuant2"    value="p" /></td>
+                     <td><input type="checkbox"    name="mathQuant2"    value="a" /></td>
+                     <td><input type="checkbox"    name="mathQuant2"    value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Math/Quantitative Reasoning - 3</th>
-                     <td><input type="radio"  name="mathQuant3"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="mathQuant3"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="mathQuant3"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="mathQuant3"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="mathQuant3"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="mathQuant3"    value="i" /></td>
+                     <td><input type="checkbox"    name="mathQuant3"    value="r" /></td>
+                     <td><input type="checkbox"    name="mathQuant3"    value="p" /></td>
+                     <td><input type="checkbox"    name="mathQuant3"    value="a" /></td>
+                     <td><input type="checkbox"    name="mathQuant3"    value="m" /></td>
                   </tr> 
                  
                   <tr>
                      <th>Math/Quantitative Reasoning - 4</th>
-                     <td><input type="radio"  name="mathQuant4"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="mathQuant4"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="mathQuant4"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="mathQuant4"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="mathQuant4"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="mathQuant4"    value="i" /></td>
+                     <td><input type="checkbox"    name="mathQuant4"    value="r" /></td>
+                     <td><input type="checkbox"    name="mathQuant4"    value="p" /></td>
+                     <td><input type="checkbox"    name="mathQuant4"    value="a" /></td>
+                     <td><input type="checkbox"    name="mathQuant4"    value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Math/Quantitative Reasoning - 5</th>
-                     <td><input type="radio"  name="mathQuant5"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="mathQuant5"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="mathQuant5"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="mathQuant5"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="mathQuant5"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="mathQuant5"    value="i" /></td>
+                     <td><input type="checkbox"    name="mathQuant5"    value="r" /></td>
+                     <td><input type="checkbox"    name="mathQuant5"    value="p" /></td>
+                     <td><input type="checkbox"    name="mathQuant5"    value="a" /></td>
+                     <td><input type="checkbox"    name="mathQuant5"    value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Social Sciences-1</th>
-                     <td><input type="radio"  name="socScience1"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="socScience1"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="socScience1"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="socScience1"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="socScience1"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="socScience1"   value="i" /></td>
+                     <td><input type="checkbox"    name="socScience1"   value="r" /></td>
+                     <td><input type="checkbox"    name="socScience1"   value="p" /></td>
+                     <td><input type="checkbox"    name="socScience1"   value="a" /></td>
+                     <td><input type="checkbox"    name="socScience1"   value="m" /></td>
                   </tr>
                  
                   <tr>
                      <th>Social Sciences-2</th>
-                     <td><input type="radio"  name="socScience2"     id="introduced"       value="i" /></td>
-                     <td><input type="radio"  name="socScience2"     id="reinforced"       value="r" /></td>
-                     <td><input type="radio"  name="socScience2"     id="proficient"       value="p" /></td>
-                     <td><input type="radio"  name="socScience2"     id="assessed"         value="a" /></td>
-                     <td><input type="radio"  name="socScience2"     id="moreProficient"   value="m" /></td>
+                     <td><input type="checkbox"    name="socScience2"   value="i" /></td>
+                     <td><input type="checkbox"    name="socScience2"   value="r" /></td>
+                     <td><input type="checkbox"    name="socScience2"   value="p" /></td>
+                     <td><input type="checkbox"    name="socScience2"   value="a" /></td>
+                     <td><input type="checkbox"    name="socScience2"   value="m" /></td>
                   </tr>             
                </table>
             </div id="scroll">  
