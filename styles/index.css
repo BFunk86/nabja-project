@@ -15,7 +15,7 @@ body {
 }
 
 /* Sets the style font style for heading */
-h1, h2, h3, h4, h5, h6, h7, h8, nav ul li a {
+h1, h2, h3, h4, h5, h6, h7, h8, nav ul li a, label, caption {
     font-family: "Trebuchet MS";
 }
 
