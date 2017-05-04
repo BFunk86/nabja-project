@@ -25,65 +25,65 @@
          </ul> 
       </nav> 
    </header>
-    
-   <form id="outer">
-      <fieldset class="fieldSet">
-         <legend id="topLegend">
-            <h1>Course Learning Outcomes</h1>
-         </legend>
-         <form action="report.php" method="post">
-            <fieldset class="fieldSet">
-               <legend id="courseLegend">
-                  <h2>Course</h2></legend>
-               <label for="course">Course Name:</label><br>
-               <select id="course" size="6" multiple>
-              <option value="web_pub">Web Publishing</option>
-              <option value="micro_Apps_I">Microcomputer Applications I</option>
-              <option value="prog_concepts">Programming Concepts/Applications</option>
-              <option value="comp_prog">Computer Programming</option>
-              <option value="web_tech">Web Technologies</option>
-              <option value="micro_apps_II">Microcomputer Applications II</option>
-            </select>
-            <br><br>
-            <input class="submitButton" type="button" name="courseSubmit" value="Generate Report" />
-            </fieldset>
-         </form>
-         <form>
-            <fieldset class="fieldSet">
-               <legend id="programLegend">
-                  <h2>Program</h2>
-               </legend>
-               <label for="program">Program Name:</label>
-               <select name="program" id="program">
-              <option value="cs">Computer Science</option>
-              <option value="it">Information Technology</option>
-              <option value="cis">Computer Information Systems</option>
-            </select>
-            <br><br>
-            <input class="submitButton" type="button" name="programSubmit" value="Generate Report" />
-            </fieldset>
-         </form>
-         <form>
-            <fieldset class="fieldSet">
-               <legend id="genEdLegend">
-                  <h2>General Education</h2></legend>
-               <label for="genEd">General Education Name:</label>
-               <select name="genEd" id="genEd">
-              <option value="math">Mathematics/Quantitive Reasoning</option>
-              <option value="am_history">American History</option>
-              <option value="arts">The Arts</option>
-            </select>
-            <br><br>
-            <input class="submitButton" type="button" name="generalSubmit" value="Generate Report" />
-            </fieldset>
-         </form>
-      </fieldset>
-   </form>
-   <footer>
-      <div class="footer">
-         <p>SUNY Jamestown Community College - 525 Falconer Street, Jamestown, NY</p>
-      </div>
-   </footer>
+   <div class="wrapper">
+      <form id="outer">
+         <fieldset class="fieldSet">
+            <legend id="topLegend">
+               <h1>Course Learning Outcomes</h1>
+            </legend>
+            <form action="report.php" method="post">
+               <fieldset class="fieldSet">
+                  <legend id="courseLegend">
+                     <h2>Course</h2></legend>
+                  <label for="course">Course Name:</label><br>
+                  <select id="course" size="6" multiple>
+                 <option value="web_pub">Web Publishing</option>
+                 <option value="micro_Apps_I">Microcomputer Applications I</option>
+                 <option value="prog_concepts">Programming Concepts/Applications</option>
+                 <option value="comp_prog">Computer Programming</option>
+                 <option value="web_tech">Web Technologies</option>
+                 <option value="micro_apps_II">Microcomputer Applications II</option>
+               </select>
+               <br><br>
+               <input class="submitButton" type="button" name="courseSubmit" value="Generate Report" />
+               </fieldset>
+            </form>
+            <form>
+               <fieldset class="fieldSet">
+                  <legend id="programLegend">
+                     <h2>Program</h2>
+                  </legend>
+                  <label for="program">Program Name:</label>
+                  <select name="program" id="program">
+                 <option value="cs">Computer Science</option>
+                 <option value="it">Information Technology</option>
+                 <option value="cis">Computer Information Systems</option>
+               </select>
+               <br><br>
+               <input class="submitButton" type="button" name="programSubmit" value="Generate Report" />
+               </fieldset>
+            </form>
+            <form>
+               <fieldset class="fieldSet">
+                  <legend id="genEdLegend">
+                     <h2>General Education</h2></legend>
+                  <label for="genEd">General Education Name:</label>
+                  <select name="genEd" id="genEd">
+                 <option value="math">Mathematics/Quantitive Reasoning</option>
+                 <option value="am_history">American History</option>
+                 <option value="arts">The Arts</option>
+               </select>
+               <br><br>
+               <input class="submitButton" type="button" name="generalSubmit" value="Generate Report" />
+               </fieldset>
+            </form>
+         </fieldset>
+      </form>
+      <div class="push"></div>
+   </div><!-- .wrapper -->
+   <div class="footer">
+      <p>SUNY Jamestown Community College - 525 Falconer Street, Jamestown, NY</p>
+   </div>
    <!-- Scripts -->
    <script src="scripts/index.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

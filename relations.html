@@ -25,236 +25,238 @@
          </ul> 
       </nav> 
    </header>
-    
-   <form id="outer">
-      <fieldset class="fieldSet">
-         <legend id="topLegend">
-            <h1>Course Learning Outcomes</h1>
-         </legend>
-         <form action="report.php" method="post">
-            <fieldset class="fieldSet">
-               <legend id="courseLegend">
-                  <h2>Course</h2></legend>
-               <label for="course">Course Name:</label><br>
-               <select id="course">
-              <option value="web_pub">Web Publishing</option>
-              <option value="micro_Apps_I">Microcomputer Applications I</option>
-              <option value="prog_concepts">Programming Concepts/Applications</option>
-              <option value="comp_prog">Computer Programming</option>
-              <option value="web_tech">Web Technologies</option>
-              <option value="micro_apps_II">Microcomputer Applications II</option>
-            </select>
-            <br><br>
-            <input class="submitButton" type="button" name="courseSubmit" value="Generate Report" />
-            </fieldset>
-         </form>
-         
-         <form id="relations">
-            <fieldset class="fieldSet">
-               <legend id="relationsLegend">
-                  <h2>Relations</h2>
-               </legend>
-             
-            <div id="scroll"> 
-               <table class="relOpt" border="1" cellspacing="3" cellpadding="5"
-                    summary="This table contains options for course attributes">   
-                  <caption>   Legend: (I)-Introduced, (R)-Reinforcment, (P)-Proficient,
-                                      (A)-Assessed,   (M)-More Proficient
-                  </caption>
-                 
-                  <thead>
-                  <tr>
-                     <th>Outcomes</th>
-                     <th>I</th>
-                     <th>R</th>
-                     <th>P</th>
-                     <th>A</th>
-                     <th>M</th>
-                  </tr>
-                  </thead>
-                  
-                  <tbody>
-                  
-                  <tr>
-                    <th>Web/Database Application</th>
-                    <td><input  type="checkbox"    name="webData"       value="i" /></td>   
-                    <td><input  type="checkbox"    name="webData"       value="r" /></td>
-                    <td><input  type="checkbox"    name="webData"       value="p" /></td>
-                    <td><input  type="checkbox"    name="webData"       value="a" /></td>
-                    <td><input  type="checkbox"    name="webData"       value="m" /></td>
-                  </tr>
-                  
-                  <tr>
-                     <th>Office Software Solutions</th>
-                     <td><input type="checkbox"    name="officeSoft"    value="i" /></td>
-                     <td><input type="checkbox"    name="officeSoft"    value="r" /></td>
-                     <td><input type="checkbox"    name="officeSoft"    value="p" /></td>
-                     <td><input type="checkbox"    name="officeSoft"    value="a" /></td>
-                     <td><input type="checkbox"    name="officeSoft"    value="m" /></td>
-                  </tr>
-                                  
-                  <tr>
-                     <th>Object Oriented Programming Language</th>
-                     <td><input type="checkbox"    name="objProgLang"   value="i" /></td>
-                     <td><input type="checkbox"    name="objProgLang"   value="r" /></td>
-                     <td><input type="checkbox"    name="objProgLang"   value="p" /></td>
-                     <td><input type="checkbox"    name="objProgLang"   value="a" /></td>
-                     <td><input type="checkbox"    name="objProgLang"   value="m" /></td>
-                  </tr>
-                        
-                  <tr>
-                     <th>Hardware/Software Troubleshooting</th>
-                     <td><input type="checkbox"    name="hardSoftware"  value="i" /></td>
-                     <td><input type="checkbox"    name="hardSoftware"  value="r" /></td>
-                     <td><input type="checkbox"    name="hardSoftware"  value="p" /></td>
-                     <td><input type="checkbox"    name="hardSoftware"  value="a" /></td>
-                     <td><input type="checkbox"    name="hardSoftware"  value="m" /></td>
-                  </tr>
-                                
-                  <tr>
-                     <th>Networking</th>
-                     <td><input type="checkbox"    name="networking"    value="i" /></td>
-                     <td><input type="checkbox"    name="networking"    value="r" /></td>
-                     <td><input type="checkbox"    name="networking"    value="p" /></td>
-                     <td><input type="checkbox"    name="networking"    value="a" /></td>
-                     <td><input type="checkbox"    name="networking"    value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Data Structures</th>
-                     <td><input type="checkbox"    name="dataStruct"    value="i" /></td>
-                     <td><input type="checkbox"    name="dataStruct"    value="r" /></td>
-                     <td><input type="checkbox"    name="dataStruct"    value="p" /></td>
-                     <td><input type="checkbox"    name="dataStruct"    value="a" /></td>
-                     <td><input type="checkbox"    name="dataStruct"    value="m" /></td>
-                  </tr>
-                  
-                  <tr>
-                     <th>Data Structures</th>
-                     <td><input type="checkbox"    name="assemblyLang"  value="i" /></td>
-                     <td><input type="checkbox"    name="assemblyLang"  value="r" /></td>
-                     <td><input type="checkbox"    name="assemblyLang"  value="p" /></td>
-                     <td><input type="checkbox"    name="assemblyLang"  value="a" /></td>
-                     <td><input type="checkbox"    name="assemblyLang"  value="m" /></td>
-                  </tr>
-               
-                  <tr>
-                     <th>Basic Communication - 1</th>
-                     <td><input type="checkbox"    name="basicCom1"     value="i" /></td>
-                     <td><input type="checkbox"    name="basicCom1"     value="r" /></td>
-                     <td><input type="checkbox"    name="basicCom1"     value="p" /></td>
-                     <td><input type="checkbox"    name="basicCom1"     value="a" /></td>
-                     <td><input type="checkbox"    name="basicCom1"     value="m" /></td>
-                  </tr>
-              
-                  <tr>
-                     <th>Basic Communication - 2</th>
-                     <td><input type="checkbox"    name="basicCom2"     value="i" /></td>
-                     <td><input type="checkbox"    name="basicCom2"     value="r" /></td>
-                     <td><input type="checkbox"    name="basicCom2"     value="p" /></td>
-                     <td><input type="checkbox"    name="basicCom2"     value="a" /></td>
-                     <td><input type="checkbox"    name="basicCom2"     value="m" /></td>
-                  </tr>
-             
+   <div class="wrapper"> 
+      <form id="outer">
+         <fieldset class="fieldSet">
+            <legend id="topLegend">
+               <h1>Course Learning Outcomes</h1>
+            </legend>
+            <form action="report.php" method="post">
+               <fieldset class="fieldSet">
+                  <legend id="courseLegend">
+                     <h2>Course</h2></legend>
+                  <label for="course">Course Name:</label><br>
+                  <select id="course">
+                 <option value="web_pub">Web Publishing</option>
+                 <option value="micro_Apps_I">Microcomputer Applications I</option>
+                 <option value="prog_concepts">Programming Concepts/Applications</option>
+                 <option value="comp_prog">Computer Programming</option>
+                 <option value="web_tech">Web Technologies</option>
+                 <option value="micro_apps_II">Microcomputer Applications II</option>
+               </select>
+               <br><br>
+               <input class="submitButton" type="button" name="courseSubmit" value="Generate Report" />
+               </fieldset>
+            </form>
+            
+            <form id="relations">
+               <fieldset class="fieldSet">
+                  <legend id="relationsLegend">
+                     <h2>Relations</h2>
+                  </legend>
                 
-                  <tr>
-                     <th>Basic Communication - 3</th>
-                     <td><input type="checkbox"    name="basicCom3"     value="i" /></td>
-                     <td><input type="checkbox"    name="basicCom3"     value="r" /></td>
-                     <td><input type="checkbox"    name="basicCom3"     value="p" /></td>
-                     <td><input type="checkbox"    name="basicCom3"     value="a" /></td>
-                     <td><input type="checkbox"    name="basicCom3"     value="m" /></td>
-                  </tr>
+               <div id="scroll"> 
+                  <table class="relOpt" border="1" cellspacing="3" cellpadding="5"
+                       summary="This table contains options for course attributes">   
+                     <caption>
+                        Legend: (I)-Introduced, (R)-Reinforcment, (P)-Proficient, (A)-Assessed,(M)-More Proficient
+                     </caption>
+                    
+                     <thead>
+                     <tr>
+                        <th>Outcomes</th>
+                        <th>I</th>
+                        <th>R</th>
+                        <th>P</th>
+                        <th>A</th>
+                        <th>M</th>
+                     </tr>
+                     </thead>
+                     
+                     <tbody>
+                     
+                     <tr>
+                       <th>Web/Database Application</th>
+                       <td><input  type="checkbox"    name="webData"       value="i" /></td>   
+                       <td><input  type="checkbox"    name="webData"       value="r" /></td>
+                       <td><input  type="checkbox"    name="webData"       value="p" /></td>
+                       <td><input  type="checkbox"    name="webData"       value="a" /></td>
+                       <td><input  type="checkbox"    name="webData"       value="m" /></td>
+                     </tr>
+                     
+                     <tr>
+                        <th>Office Software Solutions</th>
+                        <td><input type="checkbox"    name="officeSoft"    value="i" /></td>
+                        <td><input type="checkbox"    name="officeSoft"    value="r" /></td>
+                        <td><input type="checkbox"    name="officeSoft"    value="p" /></td>
+                        <td><input type="checkbox"    name="officeSoft"    value="a" /></td>
+                        <td><input type="checkbox"    name="officeSoft"    value="m" /></td>
+                     </tr>
+                                     
+                     <tr>
+                        <th>Object Oriented Programming Language</th>
+                        <td><input type="checkbox"    name="objProgLang"   value="i" /></td>
+                        <td><input type="checkbox"    name="objProgLang"   value="r" /></td>
+                        <td><input type="checkbox"    name="objProgLang"   value="p" /></td>
+                        <td><input type="checkbox"    name="objProgLang"   value="a" /></td>
+                        <td><input type="checkbox"    name="objProgLang"   value="m" /></td>
+                     </tr>
+                           
+                     <tr>
+                        <th>Hardware/Software Troubleshooting</th>
+                        <td><input type="checkbox"    name="hardSoftware"  value="i" /></td>
+                        <td><input type="checkbox"    name="hardSoftware"  value="r" /></td>
+                        <td><input type="checkbox"    name="hardSoftware"  value="p" /></td>
+                        <td><input type="checkbox"    name="hardSoftware"  value="a" /></td>
+                        <td><input type="checkbox"    name="hardSoftware"  value="m" /></td>
+                     </tr>
+                                   
+                     <tr>
+                        <th>Networking</th>
+                        <td><input type="checkbox"    name="networking"    value="i" /></td>
+                        <td><input type="checkbox"    name="networking"    value="r" /></td>
+                        <td><input type="checkbox"    name="networking"    value="p" /></td>
+                        <td><input type="checkbox"    name="networking"    value="a" /></td>
+                        <td><input type="checkbox"    name="networking"    value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Data Structures</th>
+                        <td><input type="checkbox"    name="dataStruct"    value="i" /></td>
+                        <td><input type="checkbox"    name="dataStruct"    value="r" /></td>
+                        <td><input type="checkbox"    name="dataStruct"    value="p" /></td>
+                        <td><input type="checkbox"    name="dataStruct"    value="a" /></td>
+                        <td><input type="checkbox"    name="dataStruct"    value="m" /></td>
+                     </tr>
+                     
+                     <tr>
+                        <th>Data Structures</th>
+                        <td><input type="checkbox"    name="assemblyLang"  value="i" /></td>
+                        <td><input type="checkbox"    name="assemblyLang"  value="r" /></td>
+                        <td><input type="checkbox"    name="assemblyLang"  value="p" /></td>
+                        <td><input type="checkbox"    name="assemblyLang"  value="a" /></td>
+                        <td><input type="checkbox"    name="assemblyLang"  value="m" /></td>
+                     </tr>
+                  
+                     <tr>
+                        <th>Basic Communication - 1</th>
+                        <td><input type="checkbox"    name="basicCom1"     value="i" /></td>
+                        <td><input type="checkbox"    name="basicCom1"     value="r" /></td>
+                        <td><input type="checkbox"    name="basicCom1"     value="p" /></td>
+                        <td><input type="checkbox"    name="basicCom1"     value="a" /></td>
+                        <td><input type="checkbox"    name="basicCom1"     value="m" /></td>
+                     </tr>
+                 
+                     <tr>
+                        <th>Basic Communication - 2</th>
+                        <td><input type="checkbox"    name="basicCom2"     value="i" /></td>
+                        <td><input type="checkbox"    name="basicCom2"     value="r" /></td>
+                        <td><input type="checkbox"    name="basicCom2"     value="p" /></td>
+                        <td><input type="checkbox"    name="basicCom2"     value="a" /></td>
+                        <td><input type="checkbox"    name="basicCom2"     value="m" /></td>
+                     </tr>
                 
-                  <tr>
-                     <th>Basic Communication - 4</th>
-                     <td><input type="checkbox"    name="basicCom4"     value="i" /></td>
-                     <td><input type="checkbox"    name="basicCom4"     value="r" /></td>
-                     <td><input type="checkbox"    name="basicCom4"     value="p" /></td>
-                     <td><input type="checkbox"    name="basicCom4"     value="a" /></td>
-                     <td><input type="checkbox"    name="basicCom4"     value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Basic Communication - 5</th>
-                     <td><input type="checkbox"    name="basicCom5"     value="i" /></td>
-                     <td><input type="checkbox"    name="basicCom5"     value="r" /></td>
-                     <td><input type="checkbox"    name="basicCom5"     value="p" /></td>
-                     <td><input type="checkbox"    name="basicCom5"     value="a" /></td>
-                     <td><input type="checkbox"    name="basicCom5"     value="m" /></td>
-                  </tr>
-                
-                  <tr>
-                     <th>Math/Quantitative Reasoning - 1</th>
-                     <td><input type="checkbox"    name="mathQuant1"    value="i" /></td>
-                     <td><input type="checkbox"    name="mathQuant1"    value="r" /></td>
-                     <td><input type="checkbox"    name="mathQuant1"    value="p" /></td>
-                     <td><input type="checkbox"    name="mathQuant1"    value="a" /></td>
-                     <td><input type="checkbox"    name="mathQuant1"    value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Math/Quantitative Reasoning - 2</th>
-                     <td><input type="checkbox"    name="mathQuant2"    value="i" /></td>
-                     <td><input type="checkbox"    name="mathQuant2"    value="r" /></td>
-                     <td><input type="checkbox"    name="mathQuant2"    value="p" /></td>
-                     <td><input type="checkbox"    name="mathQuant2"    value="a" /></td>
-                     <td><input type="checkbox"    name="mathQuant2"    value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Math/Quantitative Reasoning - 3</th>
-                     <td><input type="checkbox"    name="mathQuant3"    value="i" /></td>
-                     <td><input type="checkbox"    name="mathQuant3"    value="r" /></td>
-                     <td><input type="checkbox"    name="mathQuant3"    value="p" /></td>
-                     <td><input type="checkbox"    name="mathQuant3"    value="a" /></td>
-                     <td><input type="checkbox"    name="mathQuant3"    value="m" /></td>
-                  </tr> 
-                 
-                  <tr>
-                     <th>Math/Quantitative Reasoning - 4</th>
-                     <td><input type="checkbox"    name="mathQuant4"    value="i" /></td>
-                     <td><input type="checkbox"    name="mathQuant4"    value="r" /></td>
-                     <td><input type="checkbox"    name="mathQuant4"    value="p" /></td>
-                     <td><input type="checkbox"    name="mathQuant4"    value="a" /></td>
-                     <td><input type="checkbox"    name="mathQuant4"    value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Math/Quantitative Reasoning - 5</th>
-                     <td><input type="checkbox"    name="mathQuant5"    value="i" /></td>
-                     <td><input type="checkbox"    name="mathQuant5"    value="r" /></td>
-                     <td><input type="checkbox"    name="mathQuant5"    value="p" /></td>
-                     <td><input type="checkbox"    name="mathQuant5"    value="a" /></td>
-                     <td><input type="checkbox"    name="mathQuant5"    value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Social Sciences-1</th>
-                     <td><input type="checkbox"    name="socScience1"   value="i" /></td>
-                     <td><input type="checkbox"    name="socScience1"   value="r" /></td>
-                     <td><input type="checkbox"    name="socScience1"   value="p" /></td>
-                     <td><input type="checkbox"    name="socScience1"   value="a" /></td>
-                     <td><input type="checkbox"    name="socScience1"   value="m" /></td>
-                  </tr>
-                 
-                  <tr>
-                     <th>Social Sciences-2</th>
-                     <td><input type="checkbox"    name="socScience2"   value="i" /></td>
-                     <td><input type="checkbox"    name="socScience2"   value="r" /></td>
-                     <td><input type="checkbox"    name="socScience2"   value="p" /></td>
-                     <td><input type="checkbox"    name="socScience2"   value="a" /></td>
-                     <td><input type="checkbox"    name="socScience2"   value="m" /></td>
-                  </tr>             
-               </table>
-            </div id="scroll">  
-            </fieldset>
-         </form>
-   <footer>
-      <div class="footer">
-         <p>SUNY Jamestown Community College - 525 Falconer Street, Jamestown, NY</p>
-      </div>
-   </footer>
+                   
+                     <tr>
+                        <th>Basic Communication - 3</th>
+                        <td><input type="checkbox"    name="basicCom3"     value="i" /></td>
+                        <td><input type="checkbox"    name="basicCom3"     value="r" /></td>
+                        <td><input type="checkbox"    name="basicCom3"     value="p" /></td>
+                        <td><input type="checkbox"    name="basicCom3"     value="a" /></td>
+                        <td><input type="checkbox"    name="basicCom3"     value="m" /></td>
+                     </tr>
+                   
+                     <tr>
+                        <th>Basic Communication - 4</th>
+                        <td><input type="checkbox"    name="basicCom4"     value="i" /></td>
+                        <td><input type="checkbox"    name="basicCom4"     value="r" /></td>
+                        <td><input type="checkbox"    name="basicCom4"     value="p" /></td>
+                        <td><input type="checkbox"    name="basicCom4"     value="a" /></td>
+                        <td><input type="checkbox"    name="basicCom4"     value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Basic Communication - 5</th>
+                        <td><input type="checkbox"    name="basicCom5"     value="i" /></td>
+                        <td><input type="checkbox"    name="basicCom5"     value="r" /></td>
+                        <td><input type="checkbox"    name="basicCom5"     value="p" /></td>
+                        <td><input type="checkbox"    name="basicCom5"     value="a" /></td>
+                        <td><input type="checkbox"    name="basicCom5"     value="m" /></td>
+                     </tr>
+                   
+                     <tr>
+                        <th>Math/Quantitative Reasoning - 1</th>
+                        <td><input type="checkbox"    name="mathQuant1"    value="i" /></td>
+                        <td><input type="checkbox"    name="mathQuant1"    value="r" /></td>
+                        <td><input type="checkbox"    name="mathQuant1"    value="p" /></td>
+                        <td><input type="checkbox"    name="mathQuant1"    value="a" /></td>
+                        <td><input type="checkbox"    name="mathQuant1"    value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Math/Quantitative Reasoning - 2</th>
+                        <td><input type="checkbox"    name="mathQuant2"    value="i" /></td>
+                        <td><input type="checkbox"    name="mathQuant2"    value="r" /></td>
+                        <td><input type="checkbox"    name="mathQuant2"    value="p" /></td>
+                        <td><input type="checkbox"    name="mathQuant2"    value="a" /></td>
+                        <td><input type="checkbox"    name="mathQuant2"    value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Math/Quantitative Reasoning - 3</th>
+                        <td><input type="checkbox"    name="mathQuant3"    value="i" /></td>
+                        <td><input type="checkbox"    name="mathQuant3"    value="r" /></td>
+                        <td><input type="checkbox"    name="mathQuant3"    value="p" /></td>
+                        <td><input type="checkbox"    name="mathQuant3"    value="a" /></td>
+                        <td><input type="checkbox"    name="mathQuant3"    value="m" /></td>
+                     </tr> 
+                    
+                     <tr>
+                        <th>Math/Quantitative Reasoning - 4</th>
+                        <td><input type="checkbox"    name="mathQuant4"    value="i" /></td>
+                        <td><input type="checkbox"    name="mathQuant4"    value="r" /></td>
+                        <td><input type="checkbox"    name="mathQuant4"    value="p" /></td>
+                        <td><input type="checkbox"    name="mathQuant4"    value="a" /></td>
+                        <td><input type="checkbox"    name="mathQuant4"    value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Math/Quantitative Reasoning - 5</th>
+                        <td><input type="checkbox"    name="mathQuant5"    value="i" /></td>
+                        <td><input type="checkbox"    name="mathQuant5"    value="r" /></td>
+                        <td><input type="checkbox"    name="mathQuant5"    value="p" /></td>
+                        <td><input type="checkbox"    name="mathQuant5"    value="a" /></td>
+                        <td><input type="checkbox"    name="mathQuant5"    value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Social Sciences-1</th>
+                        <td><input type="checkbox"    name="socScience1"   value="i" /></td>
+                        <td><input type="checkbox"    name="socScience1"   value="r" /></td>
+                        <td><input type="checkbox"    name="socScience1"   value="p" /></td>
+                        <td><input type="checkbox"    name="socScience1"   value="a" /></td>
+                        <td><input type="checkbox"    name="socScience1"   value="m" /></td>
+                     </tr>
+                    
+                     <tr>
+                        <th>Social Sciences-2</th>
+                        <td><input type="checkbox"    name="socScience2"   value="i" /></td>
+                        <td><input type="checkbox"    name="socScience2"   value="r" /></td>
+                        <td><input type="checkbox"    name="socScience2"   value="p" /></td>
+                        <td><input type="checkbox"    name="socScience2"   value="a" /></td>
+                        <td><input type="checkbox"    name="socScience2"   value="m" /></td>
+                     </tr>             
+                  </table>
+               </div>  
+               </fieldset>
+            </form>
+         </fieldset>
+      </form>
+      <div class="push"></div>
+   </div><!-- .wrapper -->
+   <div class="footer">
+      <p>SUNY Jamestown Community College - 525 Falconer Street, Jamestown, NY</p>
+   </div>
    <!-- Scripts -->
    <script src="scripts/index.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
