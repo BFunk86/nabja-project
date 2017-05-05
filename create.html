@@ -2,17 +2,14 @@
 <html lang="en">
 
 <head>
-
-    <!--  Meta  -->
+<!--  Meta  -->
     <meta charset="UTF-8" />
     <title>NABJA Project</title>
 
-    <!--  Styles  -->
+<!--  Styles  -->
     <link rel="stylesheet" href="styles/index.css">
-    
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script>
         $( function() {
@@ -20,63 +17,195 @@
         } );
     </script>
 </head>
-
 <body>
-<header>
-    <!-- This is where the JCC banner will go -->
-    <div id="banner"></div>
+ <header>
+  <!-- This is where the JCC banner will go -->
+   <div id="banner"></div>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="report.html">Report</a></li>
-            <li><a  class="active" href="create.html">Create</a></li>
-            <li><a href="relations.html">Relations</a></li>
-            <li id="login"><a href="#login">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
-        </ul>
+     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="report.html">Report</a></li>
+        <li><a  class="active" href="create.html">Create</a></li>
+        <li><a href="relations.html">Relations</a></li>
+        <li id="login"><a href="#login">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+     </ul>
     </nav>
-</header>
-<div class="wrapper">
-<form id="outer">
+ </header>
+  <div class="wrapper">
+   <form id="outer">
     <fieldset class="fieldSet">
-        <legend id="topLegend">
-            <h1>Create/Edit Student Learning Outcomes</h1>
-        </legend>
+     <legend id="topLegend">
+      <h1>Create/Edit Student Learning Outcomes</h1>
+     </legend>
+    <div id="tabs">
+     <ul>
+        <li><a href="#course">Course</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#genEd">General Education</a></li>
+     </ul>
+<!-- Course Ed Form -->
+    <div id="course">
+        <p>This is where the create course slo stuff goes</p>
 
+             <div id="leftContainer">
+                <span>Course Name:</span>
+                  <br><input type="text" placeholder="New Course Name"></br>
+             </div>
+             <div id="rightContainer">
+                <span>Course Number:</span>
+                  <br><input type="text" value="Input Course Number"></br>
+             </div>
+             <div id="middleContainer" >
+                         <span>Abbreviation:</span>
 
-        <div id="tabs">
-            <ul>
-                <li><a href="#course">Course</a></li>
-                <li><a href="#program">Program</a></li>
-                <li><a href="#genEd">General Education</a></li>
-            </ul>
-            <!-- Course Ed Form -->
-            <div id="course">
-                <p>This is where the create course slo stuff goes</p>
-                <form>
-                    <input type="submit" value="Create Student Learning Outcome"/>
-                </form>
-            </div><!-- end of creating new course slo -->
+                            <br><select size="1">
+                             <option value="CSC">CSC</option>
+                             <option value="CIT">CIT</option>
+                             <option value="IT">IT</option>
+                             <option value="Option 4">O5</option>
+                             <option value="Option 5">O6</option>
+                             <option value="Option 6">O7</option>
+                            </br></select>
+                </div>
+             <div id="Labsolute">
+                <br></br>
+                 <span>Prerequisites:</span>
+                  <BR>
+                    <select style="width:200px" name="Prereqs" size="3" multiple >
+                                <option> Web Publishing </option>
+                                <option> Web Technologies</option>
+                                <option> Computer Programming</option>
+                                <option> Web Programming </option>
+                                <option> O5 </option>
+                                <option> O6 </option>
+                                <option> O7 </option>
+                            </br></select>
+             </div>
+             <div id="Rabsolute">
+                <span>Corequisites:</span>
+                 <BR>
+                  <select style="width:200px" name="Coreqs" size="3" multiple >
+                                <option> Web Publishing </option>
+                                <option> Web Technologies </option>
+                                <option> Computer Programming </option>
+                                <option> O4 </option>
+                                <option> O5 </option>
+                                <option> O6 </option>
+                                <option> O7 </option>
+                            </br></select>
+             </div>
+             <div>  
+                <span>Student Learning Outcome</span>
+                 <BR>
+                  <textarea rows="2" cols="25"></textarea>
+                 <br></br>
+             </div>
+             <div>
+                <span>Edit Student Learning Outcomes:</span>
+                 <BR>
+                  <select style="width:600px;height:150px;line-height:3em;overflow:scroll;"name="Morefruit" size="4" multiple >
+                                <option> Web Publishing </option>
+                                <option> Web Technologies </option>
+                                <option> Computer Programming </option>
+                                <option> O4 </option>
+                                <option> O5 </option>
+                                <option> O6 </option>
+                                <option> O7 </option>
+                            </br></select>
+             </div>
+              <input type="submit" value="Create Student Learning Outcome"/>
+
+</div><!-- end of creating new course slo -->
             
             <!-- Program Gen Ed Form -->
             <div id="program">
-                <p>This is where the create prorgam slo stuff goes</p>
-                <form>
+             <p>This is where the create prorgam slo stuff goes</p>
+
+                <div id="leftContainer">
+                 <span>Program Name:</span>
+                  <br><input type="text" value="Input New Program Name"></br>
+                </div>
+                <div id="rightContainer">
+                  <span>Curriculum Code:</span>
+                   <br><input type="text" value="Input Curriculum Code"></br>
+                </div>
+
+                <div id="PLContainer">  
+                 <span>Program Description:</span>
+                  <BR>
+                   <textarea rows="4" cols="45"></textarea>
+                  <br></br>
+                </div>
+                <div id="PLContainer">  
+                 <span>Student Learning Outcome</span>
+                  <BR>
+                   <textarea rows="4" cols="45"></textarea>
+                  <br></br>
+                </div>
+             <div id="PLContainer">
+                
+                 <BR>
+                  <span>Edit Student Learning Outcomes:</span>
+                  <select style="width:600px;height:150px;line-height:3em;overflow:scroll;"name="Morefruit" size="4" multiple >
+                                <option> Web Publishing </option>
+                                <option> Web Technologies </option>
+                                <option> Computer Programming </option>
+                                <option> O4 </option>
+                                <option> O5 </option>
+                                <option> O6 </option>
+                                <option> O7 </option>
+                                <option> O8 </option>
+                                <option> O9 </option>
+                                <option> O10 </option>
+                                <option> O11</option>
+                            </br></select>
+             </div>
+
                     <input type="submit" value="Create Student Learning Outcome"/>
-                </form>
+
             </div><!-- end of creating new program slo -->
             
             <!-- Create Gen Ed Form -->
             <div id="genEd">
                 <p>This is where the create gen ed slo stuff goes</p>
-                <form>
-                    <input type="submit" value="Create Student Learning Outcome"/>
-                </form>
+
+             <div >
+                <span>Course Name:</span>
+                  <br><input type="text" value="Input New Course Name"></br>
+             </div>
+            
+             <div id="middleContainer">  
+                <span>Student Learning Outcome</span>
+                 <BR>
+                  <textarea rows="5" cols="75"></textarea>
+                 <br></br>
+             </div>
+             <div>
+                
+                 <BR>
+                  <span>Edit Student Learning Outcomes:</span>
+                  <select style="width:600px;height:150px;line-height:3em;overflow:scroll;"name="Morefruit" size="4" multiple >
+                                <option> Web Publishing </option>
+                                <option> Web Technologies </option>
+                                <option> Computer Programming </option>
+                                <option> O4 </option>
+                                <option> O5 </option>
+                                <option> O6 </option>
+                                <option> O7 </option>
+                                <option> O8 </option>
+                                <option> O9 </option>
+                                <option> O10 </option>
+                                <option> O11</option>
+                            </br></select>
+                            <input type="submit" value="Create Student Learning Outcome"/>
+
+             </div>
             </div><!-- end of creating new gen ed slo -->
         </div>
 
     </fieldset>
     </form>
-</form>
+
     
 </div><!-- .wrapper -->
 <div class="footer">

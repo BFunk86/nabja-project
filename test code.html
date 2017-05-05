@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>NABJA Project</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="styles/index.css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script>
+        $( function() {
+            $( "#tabs" ).tabs();
+        } );
+    </script>
+</head>
+
+<body>
+<header>
+    <!-- This is where the JCC banner will go -->
+    <div id="banner"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="report.html">Report</a></li>
+            <li><a  class="active" href="create.html">Create</a></li>
+            <li><a href="relations.html">Relations</a></li>
+            <li id="login"><a href="#login">Login <i class="fa fa-sign-in" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+</header>
+<div class="wrapper">
+<form id="outer">
+    <fieldset class="fieldSet">
+        <legend id="topLegend">
+            <h1>Create/Edit Student Learning Outcomes</h1>
+        </legend>
+
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#course">Course</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#genEd">General Education</a></li>
+            </ul>
+            <!-- Course Ed Form -->
+            <div id="course">
+                <p>This is where the create course slo stuff goes</p>
+                <form>
+                <div id="leftContainer">
+                  <span>Course Name:</span>
+                  <br><input type="text" value="Input New Course Name">
+                </div>
+                <div id="rightContainer">
+                  <span>Course Number:</span>
+                  <br><input type="text" value="Input Course Number">
+                </div>
+                <div id="MiddleContainer">
+                         <span>Abbreviation:</span>
+                            <br>
+                              <select id="course" size:"5">
+                             <option value="CSC">CSC</option>
+                             <option value="CIT">CIT</option>
+                             <option value="IT">IT</option>
+                             <option value="Option 4">O5</option>
+                             <option value="Option 5">O6</option>
+                             <option value="Option 6">O7</option>
+                            </br></select>
+                <div>
+                        <span>Prerequisites:</span>
+                            <BR>
+                                <select name="Morefruit" size="4" multiple >
+                                <option selected> Apples </option>
+                                <option selected> Bananas </option>
+                                <option> Oranges </option>
+                                <option> Watermelon </option>
+                                <option> Kiwi </option>
+                                <option> Cantaloupe </option>
+                                <option> Strawberries </option>
+                                </SELECT>
+                    </div>
+                    <div id="rightContainer">
+                        <span>Corequisites:</span>
+                            <BR>
+                                <select name="Morefruit" size="4" multiple >
+                                <option selected> Apples </option>
+                                <option selected> Bananas </option>
+                                <option> Oranges </option>
+                                <option> Watermelon </option>
+                                <option> Kiwi </option>
+                                <option> Cantaloupe </option>
+                                <option> Strawberries </option>
+                                </SELECT>
+                    </div>
+
+                    <input type="submit" value="Create Student Learning Outcome"/>
+
+                </form>
+            </div><!-- end of creating new course slo -->
+            
+            <!-- Program Gen Ed Form -->
+            <div id="program">
+                <p>This is where the create prorgam slo stuff goes</p>
+                <form>
+                    <input type="submit" value="Create Student Learning Outcome"/>
+                </form>
+            </div><!-- end of creating new program slo -->
+            
+            <!-- Create Gen Ed Form -->
+            <div id="genEd">
+                <p>This is where the create gen ed slo stuff goes</p>
+                <form>
+
+                    <input type="submit" value="Create Student Learning Outcome"/>
+                </form>
+            </div><!-- end of creating new gen ed slo -->
+        </div>
+
+    </fieldset>
+    </form>
+</form>
+    
+</div><!-- .wrapper -->
+<div class="footer">
+    <p>SUNY Jamestown Community College - 525 Falconer Street, Jamestown, NY</p>
+</div>
+
+<!-- Scripts -->
+<script src="scripts/index.js"></script>
+<!-- fontawesome icons -->
+<script src="https://use.fontawesome.com/e75e0e1464.js"></script>
+
+</body>
+
+</html>
