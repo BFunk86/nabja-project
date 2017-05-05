@@ -171,10 +171,11 @@ Swidth {
    float:right;
 }
 #middleContainer {
-float:center;
+
 }
 #bottom {
-  float:none;
+  float: none;
+}
 div.scrollmenu {
     background-color: #333;
     overflow: auto;
@@ -257,9 +258,9 @@ table tbody td {
     animation-duration: 0.4s
 }
 
-/* Add Animation */
+/* This adds animation for the modal to drop down the page */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
+    from {top:-300px; opacity:0}
     to {top:0; opacity:1}
 }
 
@@ -276,8 +277,7 @@ table tbody td {
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -285,14 +285,24 @@ table tbody td {
 
 .modal-header {
     padding: 2px 16px;
-    background: rgb(0,0,0) url("../media/JCC_Logo_SUNY_2_color.png") no-repeat fixed center;
+    background-size: 80px 60px;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+#modalLogo {
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #00693c;
     color: white;
 }
