@@ -200,7 +200,9 @@ div.scrollmenu a:hover {
 }
 
 /** [Report Page Styles] **/
-
+#pdf {
+   margin-left: 40%;
+}
 
 /** [Create Page Styles] **/
 
