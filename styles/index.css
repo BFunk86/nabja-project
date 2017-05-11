@@ -14,7 +14,7 @@ html, body {
 /** This changes the background color and font styles for entire page **/
 body {
    background: #f5f5f5;
-   font-family: "Goudy Old Style", 'Roboto', sans-serif;
+   font-family: "Goudy Old Style", sans-serif;
 }
 
 /* This is used to push the footer to the bottom of the page */
@@ -46,7 +46,7 @@ body {
 
 
 /* Sets the style font style for heading */
-h1, h2, h3, h4, h5, h6, h7, h8, nav ul li a, label, caption {
+h1, h2, h3, h4, h5, h6, h7, h8, nav ul li a, label, caption, td {
     font-family: "Trebuchet MS";
 }
 
@@ -155,13 +155,15 @@ legend > h2 {
  position:relative;
  top:-30px;
 }
+
 Swidth {
         width:200px;
-    }
+}
 
 #leftContainer {
    float:left;
 }
+
 #PLContainer {
    float:left;
    top:30px;
@@ -201,7 +203,33 @@ div.scrollmenu a:hover {
 
 /** [Report Page Styles] **/
 #pdf {
-   margin-left: 40%;
+    margin: 20px 20px 5px 0;
+    float: right;
+}
+
+#pdf-icon {
+    vertical-align: middle;
+}
+
+div#pdf > a {
+    text-decoration: none;
+}
+
+/* Report table head styles */
+.slos thead tr th {
+    background: #024925;
+    color: #FDB913;
+    border-color: #FDB913;
+    font-size: 18px;
+    white-space: nowrap;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 8px;
+    border-bottom: 0;
+    border-top: 0;
+}
+
+.slos thead {
+    border-color: #024925;
 }
 
 /** [Create Page Styles] **/
